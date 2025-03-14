@@ -5,7 +5,8 @@ import java.util.List;
 public class MockedNumberGenerator implements NumberGenerator {
 
     private List<Integer> numbersToGenerate;
-
+    public MockedNumberGenerator(List<Integer> numbersToGenerate) {
+        this.numbersToGenerate = numbersToGenerate;
     public MockedNumberGenerator() {
         this.numbersToGenerate = null;
     }
